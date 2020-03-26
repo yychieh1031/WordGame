@@ -20,7 +20,7 @@ class character{
         int getPower(){return power;}
         int getDefence(){return defence;}
         int getExp(){return exp;}
-        int resetValue(int health){return health = 100;}
+        
         character(std::string charName);
         character();
         void toUser();

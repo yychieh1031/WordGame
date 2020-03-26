@@ -11,10 +11,10 @@
 
 class saveData : public character{
     private:
-        char charSave[1024];
         std::fstream data;
         std::vector<std::string> detail;
-        std::string buff;
+        std::string data_Name;
+        char charDetail[];
     public:
         
         void setCharacterDetail(character user){
@@ -30,14 +30,22 @@ class saveData : public character{
         }
         void save(std::string userName){
             userName.append(".text");
+            this->data_Name = userName;
             data.open(userName,std::ios::out|std::ios::trunc);
             for(auto const& i: detail){
                 data << i;
             }
+        }
+        void getLoadDetail(){
+            data.open(data_Name,std::ios::in);
+            while(data>>charDetail){
+            std::cout<<charDetail;
+        }
         }
         void close(){
             data.close();
             std::cout<<"Next round?(Y\\N)\n";
         }
 };
+
 #endif

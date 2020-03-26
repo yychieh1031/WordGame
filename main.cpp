@@ -35,7 +35,7 @@ int main(){
     save.close();
     std::getline(std::cin,userInsert);
     nextRound.nextRound(userInsert,userCharacter,monsterName);
-
+    save.getLoadDetail();
     
     return 0;
 }

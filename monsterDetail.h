@@ -17,7 +17,7 @@ class monsterDetail{
         int getHealth(){return health;}
         int getPower(){return power;}
         int getDefence(){return defence;}
-        int reborn(int health){return health = 100;}
+        
 };
 
 
