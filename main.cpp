@@ -11,7 +11,7 @@
 #include "saveData.h"
 int main(){
     srand(time(NULL));
-    std::cout<<"Welcome to my little word game.\n";
+    std::cout<<"Welcome to zombie world.\n";
     std::cout<<"First of all, you should enter your character name.\n";
     character user;
     saveData save;
