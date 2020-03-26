@@ -12,6 +12,7 @@
 int main(){
     srand(time(NULL));
     std::cout<<"Welcome to zombie world.\n";
+    std::cout<<"This game only u to enter somethin to play.\n";
     std::cout<<"First of all, you should enter your character name.\n";
     character user;
     saveData save;
