@@ -23,7 +23,7 @@ class battle{
             this->defence = defence;
         }
         int attack(){
-            return std::rand() % this->power +10;
+            return std::rand() % this->power;
         }
         int block(){
             return std::rand() % this->defence;
@@ -42,13 +42,13 @@ class result{
                 if(result::getAttackResult(battle2, battle1).compare("Game over")==0){
                     std::cout<<"Game over\n";
                     battle1.health = 100;
-                    battle2.health = 100;
+                    battle2.health = 30;
                     break;
                 }
                 if(result::getAttackResult(battle1, battle2).compare("Game over")==0){
                     std::cout<<"You win\n";
                     battle1.health = 100;
-                    battle2.health = 100;
+                    battle2.health = 30;
                     break;
                 }
             }

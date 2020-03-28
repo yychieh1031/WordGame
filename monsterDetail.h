@@ -9,7 +9,7 @@
 class monsterDetail{
     private:
         std::string monster = "Zombie";
-        int health = 100;
+        int health = 30;
         int power = 20;
         int defence = 15;
     public:

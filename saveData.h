@@ -44,7 +44,7 @@ class saveData : public character{
         }
         void close(){
             data.close();
-            std::cout<<"Next round?(Y\\N)\n";
+            //std::cout<<"Next round?(Y\\N)\n";
         }
 };
 
